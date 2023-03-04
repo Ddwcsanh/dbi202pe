@@ -1,0 +1,2 @@
+SELECT D.DepartmentID, DepartmentName, ManagerID, LocationID
+FROM Departments D JOIN (SELECT DepartmentID, COUNT(DepartmentID) AS [NumberOfEmployee] FROM Employees GROUP BY DepartmentID) D1 ON D.DepartmentID = D1.DepartmentID
