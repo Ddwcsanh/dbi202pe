@@ -1,0 +1,3 @@
+SELECT E.Fname, E.Lname, ES.Fname, ES.Lname
+FROM EMPLOYEE E JOIN EMPLOYEE ES ON E.Super_ssn = ES.Ssn
+ORDER BY E.Fname DESC
